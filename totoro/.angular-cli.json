@@ -5,11 +5,35 @@
   },
   "apps": [
     {
-      "root": "src",
+      "root": "website",
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "timg.jpg"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
+      "root": "other",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "timg.jpg"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -28,6 +52,7 @@
         "prod": "environments/environment.prod.ts"
       }
     }
+
   ],
   "e2e": {
     "protractor": {
@@ -36,10 +61,16 @@
   },
   "lint": [
     {
-      "project": "src/tsconfig.app.json"
+      "project": "website/tsconfig.app.json"
     },
     {
-      "project": "src/tsconfig.spec.json"
+      "project": "website/tsconfig.spec.json"
+    },
+    {
+      "other": "other/tsconfig.app.json"
+    },
+    {
+      "other": "other/tsconfig.spec.json"
     },
     {
       "project": "e2e/tsconfig.e2e.json"
