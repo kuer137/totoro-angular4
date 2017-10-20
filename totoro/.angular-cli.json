@@ -5,6 +5,30 @@
   },
   "apps": [
     {
+      "root": "ipets-admin",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "timg.jpg"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    },
+    {
       "root": "website",
       "outDir": "dist",
       "assets": [
@@ -19,7 +43,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -43,7 +67,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -60,6 +84,12 @@
     }
   },
   "lint": [
+    {
+      "project": "ipets-admin/tsconfig.app.json"
+    },
+    {
+      "project": "ipets-admin/tsconfig.spec.json"
+    },
     {
       "project": "website/tsconfig.app.json"
     },
@@ -82,7 +112,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {}
   }
 }
