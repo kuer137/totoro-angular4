@@ -1,12 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { RouterModule } from '@angular/router';
 
 import { pageRoutes } from './pages.routes';
 
-import { PagesComponent } from './bundle/pages/pages.component';
-import { InformationComponent } from './bundle/pages/information/information.component';
+import { PagesComponent } from './pages.component';
+import { InformationComponent } from './information/information.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +13,7 @@ import { InformationComponent } from './bundle/pages/information/information.com
     InformationComponent,
   ],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot(pageRoutes)
+    RouterModule.forChild(pageRoutes)
   ],
   providers: []
 })

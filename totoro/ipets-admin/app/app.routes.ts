@@ -10,7 +10,7 @@ export const appRoutes=[
     pathMatch:'full'
   },
   {
-    path:'**',
+    path:'login',
     component:LoginComponent
   },
   {
