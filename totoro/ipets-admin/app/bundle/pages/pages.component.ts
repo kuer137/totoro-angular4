@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Routes } from '@angular/router';
+
+import { MenuService } from '../../theme';
 
 @Component({
   selector: 'app-pages',
