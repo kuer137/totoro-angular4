@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Routes } from '@angular/router';
 
 import { MenuService } from '../../theme';
+import { PAGES_MENU } from './page.menu';
 
 @Component({
   selector: 'app-pages',
@@ -10,9 +11,12 @@ import { MenuService } from '../../theme';
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _menuService:MenuService
+  ) { }
 
   ngOnInit() {
+
   }
 
 }

@@ -1,3 +1,19 @@
-/**
- * Created by 酷儿 on 2017/10/24.
- */
+export const PAGES_MENU = [
+  {
+    path:'pages',
+    children:[
+      {
+        path:'info',
+        data:{
+          menu:{
+            title:'information',
+            iconfont:'icon-info',
+            selected:false,
+            expanded:false,
+            order:0
+          }
+        }
+      }
+    ]
+  }
+];
