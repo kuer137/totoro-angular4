@@ -1,16 +1,15 @@
-import { RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
+
 import { PagesComponent } from './pages.component';
 
-import { InformationComponent } from './information/information.component';
+//import { InformationComponent } from './information/information.component';
 
-export const pageRoutes=[
+export const routes:Routes = [
   {
     path:'',
-    redirectTo:'info',
-    pathMatch:'full'
-  },
-  {
-    path:'info',
-    component:InformationComponent
+    component:PagesComponent,
+    children:[]
   }
-]
+];
+export const  pageRoutes:ModuleWithProviders = RouterModule.forChild(routes);

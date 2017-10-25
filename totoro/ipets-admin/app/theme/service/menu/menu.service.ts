@@ -11,7 +11,7 @@ export class MenuService {
   menuItems = new BehaviorSubject<any[]>([]);
 
   constructor(
-    public router: Router
+    public _router: Router
   ) { }
 
   /**

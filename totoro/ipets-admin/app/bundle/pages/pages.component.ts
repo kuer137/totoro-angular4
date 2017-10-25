@@ -10,13 +10,12 @@ import { PAGES_MENU } from './page.menu';
   styleUrls: ['./pages.component.scss']
 })
 export class PagesComponent implements OnInit {
-
   constructor(
     private _menuService:MenuService
   ) { }
 
   ngOnInit() {
-
+    this._menuService.updateMenuByRoutes(<Routes>PAGES_MENU);
   }
 
 }

@@ -10,6 +10,7 @@ export class InformationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(2323)
   }
 
 }
