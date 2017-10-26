@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { pageRoutes } from './pages.routes';
-//import { NgaModule } from '../../theme/nga.module';
+import { NgaModule } from '../../theme/nga.module';
 
 import { PagesComponent } from './pages.component';
 import { InformationComponent } from './information/information.component';
@@ -12,7 +12,7 @@ import { InformationComponent } from './information/information.component';
     InformationComponent
   ],
   imports: [
-    //NgaModule,
+    NgaModule,
     pageRoutes
   ],
   providers: []

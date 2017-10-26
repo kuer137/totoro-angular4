@@ -1,20 +1,22 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
-
 import {
   MenuService
 } from './service';
 
-
-//@NgModule({
-//  declarations:[],
-//  imports:[],
-//  exports:[]
-//})
-
 const NGA_SERVICES = [
   MenuService
 ];
+
+@NgModule({
+ declarations:[],
+ imports:[],
+ exports:[]
+})
+
+
+
+
 
 export class NgaModule{
   static forRoot():ModuleWithProviders {  //static 静态属性

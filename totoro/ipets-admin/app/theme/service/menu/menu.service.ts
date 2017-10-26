@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { Router, Routes } from '@angular/router';
 import * as _ from 'lodash';
+console.log('进入serviceMenu');
 
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
