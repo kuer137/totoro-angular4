@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 
 import { MenuService } from '../../theme';
 import { PAGES_MENU } from './page.menu';
+console.log(MenuService);
 
 @Component({
   selector: 'app-pages',

@@ -14,6 +14,7 @@ import { LeftComponent } from './theme/component/left/left.component';
 import { HeadTitleComponent } from './theme/component/head-title/head-title.component';
 import { LoginComponent } from './bundle/login/login.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
