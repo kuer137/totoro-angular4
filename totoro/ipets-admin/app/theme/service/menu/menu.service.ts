@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 
 import { Router, Routes } from '@angular/router';
 import * as _ from 'lodash';
-console.log('进入serviceMenu');
 
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
@@ -21,8 +20,8 @@ export class MenuService {
    * @param {Routes} routes Type compatible with app.menu.ts
    */
   public updateMenuByRoutes(routes:Routes){
+    console.log(routes,'menu.service')
     let convertedRoutes = routes;
-    console.log(routes);
     this.menuItems.next(convertedRoutes);
   }
 

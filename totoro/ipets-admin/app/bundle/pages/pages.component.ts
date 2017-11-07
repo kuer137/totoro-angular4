@@ -3,7 +3,6 @@ import { Routes } from '@angular/router';
 
 import { MenuService } from '../../theme';
 import { PAGES_MENU } from './page.menu';
-console.log(MenuService);
 
 @Component({
   selector: 'app-pages',
@@ -16,6 +15,7 @@ export class PagesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+  	console.log(this._menuService,'pages.component',PAGES_MENU,<Routes>PAGES_MENU)
     this._menuService.updateMenuByRoutes(<Routes>PAGES_MENU);
   }
 

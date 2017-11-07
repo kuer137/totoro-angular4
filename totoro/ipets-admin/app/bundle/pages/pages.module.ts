@@ -5,8 +5,8 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { PagesComponent } from './pages.component';
 import { InformationComponent } from './information/information.component';
-console.log(NgaModule,9)
 
+console.log(NgaModule,'page.module')
 @NgModule({
   declarations: [
     PagesComponent,

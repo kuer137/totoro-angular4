@@ -17,7 +17,7 @@ const NGA_SERVICES = [
  ],
  exports:[],
  providers:[   //服务
-     MenuService
+     ...NGA_SERVICES
  ]
 })
 
