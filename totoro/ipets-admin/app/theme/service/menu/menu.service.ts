@@ -21,9 +21,16 @@ export class MenuService {
    */
   public updateMenuByRoutes(routes:Routes){
     console.log(routes,'menu.service')
-    let convertedRoutes = routes;
+    let convertedRoutes = this.convertRoutesToMenus(_.cloneDeep(routes));
     this.menuItems.next(convertedRoutes);
   }
+
+  public convertRoutesToMenus(routes:Routes):any[] {
+    let items = routes;
+    console.log(routes,111)
+    return items;
+  }
+
 
 
 }
