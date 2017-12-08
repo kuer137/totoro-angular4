@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+import { HttpModule , Http } from '@angular/http';   //字组件要用到http的，这里都要引入HttpModule
+
 import { pageRoutes } from './pages.routes';
 import { NgaModule } from '../../theme/nga.module';
 
@@ -14,7 +17,9 @@ console.log(NgaModule,'page.module')
   ],
   imports: [
     NgaModule,
-    pageRoutes
+    pageRoutes,
+    FormsModule,
+    HttpModule
   ],
   providers: []
 })
