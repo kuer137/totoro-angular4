@@ -11,7 +11,7 @@ import { Jsonp } from '@angular/http';
   styleUrls: ['./information.component.scss']
 })
 export class InformationComponent implements OnInit {
-	public indexUrl = 'api/text.php?q=q669996';
+	public indexUrl = 'http://www.kuer6.my/api/text.php?q=sdfdsfsdf9';
 	public phpData = '没数据';
 
   constructor(public http:Http) { }
