@@ -8,11 +8,14 @@ import { NgaModule } from '../../theme/nga.module';
 
 import { PagesComponent } from './pages.component';
 import { InformationComponent } from './information/information.component';
+import { AddComponent } from './add/add.component';
+import { ListComponent } from './list/list.component';
 
-console.log(NgaModule,'page.module')
 @NgModule({
   declarations: [
     PagesComponent,
+    AddComponent,
+    ListComponent,
     InformationComponent
   ],
   imports: [

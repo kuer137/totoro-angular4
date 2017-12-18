@@ -1,13 +1,14 @@
-<div>
-  999
-  information works!
-</div>
 
 <div>
 	<p>获取数据：</p>
 	<div id="showData">{{ phpData }}</div>
 </div>
+<div>
+	<p>双休绑定数据：</p>
+	<div>{{ ngData }}</div>
+</div>
 
 <div>
-	<input type="text" name="">
+	<input type="text" [(ngModel)]="ngData" name="" (keyup)="getPHPdata(ngData)">
+	<button (click)="sqlPhp(ngData)">确定</button>
 </div>
