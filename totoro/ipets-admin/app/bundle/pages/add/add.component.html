@@ -1,3 +1,14 @@
-<p>
-  add works!
-</p>
+
+<form #addForm="ngForm" role="form" novalidate>
+	<div style="padding-top: 30px;">
+		<label>标题：</label>
+		<input type="text" name="title" [(ngModel)]="newadd.title" #title="ngModel">
+	</div>
+	<div style="padding-top: 15px;">
+		<label>内容：</label>
+		<textarea name="destribute" [(ngModel)]="newadd.destribute" #destribute="ngModel"></textarea>
+	</div>
+	<div style="padding-top: 15px;">
+		<button  type="submit" (click)="submisData(newadd)">提交</button>
+	</div>
+</form>
