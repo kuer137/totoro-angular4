@@ -7,18 +7,39 @@
 <div style="padding-top: 25px;padding-bottom: 30px;">
 	<form>
 		<label>Id:</label>
-		<input type="search" name="id" placeholder="请输入id">
-		<button>搜索</button>
+		<input type="search" name="id" [(ngModel)]="dataid" placeholder="请输入id">
+		<button (click)="searchData(dataid)">搜索</button>
 	</form>
 </div>
-<table>
-	<thead>
+<table *ngIf="pageLists">
+	<thead style="background-color: #f5f5f5;text-align: center;line-height: 50px;">
 		<tr>
 			<td>ID</td>
 			<td>标题</td>
 			<td>描述</td>
 			<td>操作</td>
+			<td>排序</td>
+			<td>修改内容</td>
 		</tr>
 	</thead>
+	<tbody style="text-align: center;" *ngFor="let row of pageLists;let i = index">
+		<tr>
+			<td>{{ row.id }}</td>
+			<td>{{ row.title }}</td>
+			<td>{{ row.destribute }}</td>
+			<td>
+				<button (click)="delData(row.id,i)">删除</button>
+			</td>
+			<td>{{ i }}</td>
+			<td>
+				<button (click)="modifyData(row.id,destribute,i)">修改</button>
+			</td>
+		</tr>
+	</tbody>
 </table>
+<div style="padding-top: 20px;">
+	<label>修改的内容：</label>
+	<textarea [(ngModel)]="destribute"></textarea>
+</div>
+<div *ngIf="hasData">666666666666666666666666</div>
 

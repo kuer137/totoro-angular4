@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';   //*ngIF 和 *ngFor 需要用到,需要依赖CommonModule(在子modules.ts中引入)
 import { NgModule } from '@angular/core';
 
 import { RouterModule } from '@angular/router';
