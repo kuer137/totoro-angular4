@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';   //*ngIF 和 *ngFor 需要用到,需要依赖CommonModule(在子modules.ts中引入)
 import { NgModule } from '@angular/core';
 
+import {HashLocationStrategy , LocationStrategy} from '@angular/common';  //防止刷新后报404的
+
 import { RouterModule } from '@angular/router';
 
 import { appRoutes } from './app.routes';
@@ -30,7 +32,11 @@ import { LoginComponent } from './bundle/login/login.component';
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    LoginService
+    LoginService,
+    {
+      provide: LocationStrategy, 
+      useClass: HashLocationStrategy
+    }
   ],
   bootstrap: [AppComponent]
 })
